@@ -1,0 +1,666 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<html>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> <!--timeline-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<head>
+		<title>個人網站</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="林湘縈的一頁式RWD網站履歷">
+		<meta name="keywords" content="一頁式，RWD，網站履歷">
+		<meta property="og:image" content="images/Logo.png">
+		<meta property="og:image:type" content="images/Logo.png">
+		<meta property="og:image:width" content="200">
+		<meta property="og:image:height" content="200">
+		<meta property="og:title" content="個人網站">
+		<meta property="og:description" content="歡迎來到林湘縈的個人網站，畢業國立高雄大學資訊管理學系，希望職缺為前端、資安相關產業。">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+	</head>
+
+<!--
+	
+                                                     __----~~~~~~~~~~~------___                                                
+                                    .  .   ~~//====......          __--~ ~~                                                               
+                    -.            \_|//     |||\\  ~~~~~~::::... /~                                                                      
+                 ___-==_       _-~o~  \/    |||  \\            _/~~-                                                                                     
+         __---~~~.==~||\=_    -_--~/_-~|-   |\\   \\        _/~                                                                                              
+     _-~~     .=~    |  \\-_    '-~7  /-   /  ||    \      /                                                                                              
+   .~       .~       |   \\ -_    /  /-   /   ||      \   /               	                                                                                                                                                          
+ /  ____  /         |     \\ ~-_/  /|- _/   .||       \ /                	          ∧_∧::                                                                                                                                            
+  |~~    ~~|--~~~~--_ \     ~==-/   | \~--===~~        .\               	        (´･ω･`)::                                             
+           '         ~-|      /|    |-~\~~       __--~~                 	       /⌒　　⌒)::                                                
+                       |-~~-_/ |    |   ~\_   _-~            /\         	      /へ_＿  / /::                                                      
+                            /  \     \__   \/~                \__       	     (＿＼＼  ﾐ)/::                                                      
+                        _--~ _/ | .-~~____--~-/                  ~~==.   	          ｜ `-イ::                                                       
+                       ((->/~   '.|||' -_|    ~~-/ ,              . _||  	          /ｙ　 )::                                                              
+                                  -_     ~\      ~~---l__i__i__i--~~_/   	         /／  ／::                                                            
+                                  _-~-__   ~)  \--______________--~~     		    ／　／::
+                                //.-~~~-~_--~- |-------~~~~~~~~          	       (　く:::                                                        
+                                       //.-~~~--\                                  |＼ ヽ:::                                                                                                    
+~~~~~~~~~~~~~~~~~~神獸保佑~~~~~~~~~~~~~永無BUG~~~~~~~~~~~~~~~~~~~~~~~~  		　~~~~~硬漢猛貓貓~~~~~
+ 
+-->
+
+	<!-- Boostrap navbar 補充網站：https://tinyurl.com/2dl2pgef-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<!-- LOGO --> 
+				<img src="images/Logo.png" width="40" height="40" class="d-inline-block align-top" alt="Logo">
+			</a> 
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link active" href="#main">首頁</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#skill">技能</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#timeline">工作經歷</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#myself">自傳</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#two">作品集</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				大學
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="#Competition" >全國競賽佳績</a>
+				<a class="dropdown-item" href="#afterschool">課餘活動</a>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Index_EN.html">English</a>
+			</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+	<!-- Boostrap navbar -->
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header" >
+				<div class="inner" >
+					<a class="image avatar " >
+						<img src="images/Logo.png" alt="" /></a><br/>
+						<h4>林湘縈，1999</h4><br/>
+					<h4>
+						<i class="fa-solid fa-location-dot"></i>&emsp;台灣，桃園市<br />			
+						<br />
+						國立高雄大學｜資訊管理學系&emsp;畢業<br />
+						國立中央大學｜圖書館資訊組&emsp;任職中<br />
+						<br />
+						<ul class="iconstop">
+							<a href="mailto:shining.work09@gmail.com" target="_blank" class="fa-solid fa-envelope fa-xl"></i></a>&emsp;
+							<a href="https://github.com/shining09" target="_blank" class="fa-brands fa-github fa-xl"></i></a>&emsp;
+							<a href="https://www.youtube.com/@AFei_vtuberclips" target="_blank" class="fa-brands fa-youtube fa-xl"></i></a>&emsp;
+							<a href="#" target="_blank" class="fa-brands fa-linkedin fa-xl"></i></a>&emsp;
+							<a href="#" target="_blank" class="fa-brands fa-facebook fa-xl"></i></a>
+						</ul>
+					</h4>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+				<section id="introduce">
+					<header>	
+						<h3>
+							<div id="intro">Hi😊，我是林湘縈，歡迎來到我的個人網站履歷。</div> <br/>
+							✓客觀、邏輯式的觀察，條列出並解決問題。 <br/>
+							✓持續學習，充實自我。 <br/>
+							✓對社會充滿好奇，喜愛接觸不同事物。 <br/><br/>
+							負責任、不畏挑戰、學習新知，努力成為比昨天更好的自己💪。 <br/>
+							#資訊 #前端 #資安 #社群媒體 <br/>
+						</h3><br/>
+						<h4 class="major">
+							每個人都在自己的時區裡用自己的速度奔跑，無需嫉妒或嘲笑他們， <br/>
+							每個人都活在自己的時區裡，在命運為你安排的時區裡，一切都會準時。 <br/>
+							Everyone is running their own race, in their own time. Don’t envy them or mock them. <br/>
+							Eeveryone in this world works based on their own time zone. <br/>
+							You are very much on time, and in your TIME ZONE destiny set up for you. <br/>
+							——作者：佚名（美國人） 
+							<br/>
+						</h4>	
+					</header>
+				</section>
+
+				<section id="skill">
+						<div class="section_heading text-center">
+							<h1 class="title_content fa-solid fa-toolbox">&emsp;技能</h1> 
+							<!--Adobeicon：https://codepen.io/ravisuhag/pen/nRWWpj
+										   https://www.flaticon.com/free-icons/pr-->
+						</div>
+					<div class="row" style="margin: 0 1em 0 1em;"> <!--調這個才會整齊-->
+						<div class="col-6 col-12-xsmall skill" data-aos="zoom-in">
+							<h3 class="fa-solid fa-code">&emsp;程式語言</h3>
+							<br/>
+							<div class="row">
+								<div class="col-6 col-12-xsmall skill">
+									<li>Ｃ</li>
+									<li>JAVA</li>
+									<li>PHP</li>
+									<li>Python</li>
+									<li>MySQL</li>
+								</div>
+								<div class="col-6 col-12-xsmall skill">
+									<li>Vue.js</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JS</li><br/>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-12-xsmall skill" data-aos="zoom-in">
+							<h3 class="fa-brands fa-microsoft">&emsp;Office</h3>
+									<li>WORD（MOCC專業能力認證）</li>
+									<li>PowerPoint（MOCC專業能力認證）</li>
+									<li>EXCEL（MOCC專業能力認證）</li>
+									<li>Outlook</li>
+									<li>Power BI</li>
+									<li>//Access</li><br/>
+						</div>
+						<div class="col-6 col-12-xsmall skill" data-aos="zoom-in">
+							<h3 class="fa-solid fa-photo-film">&emsp;社群影音軟體</h3>
+							<div class="row">
+								<div class="col-6 col-12-xsmall skill">
+									<li>FaceBook經營</li>
+									<li>Instagram經營</li>
+									<li>YouTube經營</li>
+								</div>
+								<div class="col-6 col-12-xsmall skill">
+									<li>PhotoShop</li>
+									<li>剪映</li>
+									<li>威力導演</li>
+									<li>Premiere (學習中)</li>
+									<li>AE (學習中)</li><br/>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-12-xsmall skill" data-aos="zoom-in">
+							<h3 class="fa-brands fa-google">&emsp;Google</h3> 
+								<li>Google Analytics</li>
+								<li>Google Trend</li> 
+								<li>Google Adwords</li>
+								<li>Google 數位行銷</li><br/>
+						</div>
+						<div class="col-6 col-12-xsmall skill" data-aos="zoom-in">
+							<h3 class="fas fa-language">&emsp;語言</h3> 
+								<li>英文：多益620</li>
+								<li>日文：N4（準備中）</li> 
+								<li>台語：略懂</li><br/>
+						</div>
+						<div class="col-6 col-12-xsmall skill" data-aos="zoom-in">
+							<h3 class="fa-solid fa-id-card">&emsp;駕照</h3> 
+								<li>機車</li>
+								<li>汽車</li> 
+						</div>
+					</div>
+				</section>
+				<!--Skill-->
+
+				<!--timeline-->
+				<section class="timeline_area section_padding_130" id="timeline">
+					<div class="container">
+						<div class="row justify-content-center">
+							<!-- Section Heading-->
+							<div class="section_heading text-center">
+								<h1 class="title_content fa-solid fa-briefcase">&emsp;工作經歷</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<!-- Timeline Area-->
+								<div class="apland-timeline-area">
+									<!-- Single Timeline Content-->
+									<div class="single-timeline-area">
+										<div class="timeline-date" data-aos="fade-right">
+											<!--<p>Near Future</p>-->
+										</div>
+										<div class="row">
+											<div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+												<div class="single-timeline-content d-flex">
+													<div class="timeline-icon"><i class="fa-solid fa-school fa-lg" aria-hidden="true"></i></div>
+														<div class="timeline-text">
+															<h3>國立中央大學｜圖書館資訊組專任助理</h3>
+															<h5 class="colorful">2023.03&ensp;~&ensp;Now</h5> 
+															<h4>負責全館資訊系統之規劃管理，
+																全館主機與系統管理， 多媒體隨選系統規劃與管理，網路管理。<br/><br/>
+																．協助台灣聯大系統管理與維運相關事項。 <br/>
+																．協助圖書館系統、轉檔介接相關程式開發與維護。 <br/>
+																．WebOffice網頁設計與維護。 <br/>
+																．圖書館跑馬燈小刊頭管理與維護。 <br/>
+																．協助ISMS資產管理系統維護。 <br/>
+																．支援多媒體檔案設計與製作。 <br/>
+																．館辦電腦與網路管理維護。 <br/>
+																．推廣教室電腦規劃與管理維護。 <br/>
+																．國鼎檢索區與自學中心電腦管理維護。 <br/>
+																．支援館務行政與其他交辦事項。
+															</h4>
+														</div>
+													</div>
+												</div>
+											
+										</div>
+									</div>
+									
+									<!-- Single Timeline Content-->
+									<div class="single-timeline-area">
+										<div class="timeline-date" data-aos="fade-right"><!--時間軸動畫--></div>
+										<div class="row">
+											<div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+												<div class="single-timeline-content d-flex">
+													<div class="timeline-icon"><i class="fa-solid fa-train-subway fa-lg" aria-hidden="true"></i></div>
+														<div class="timeline-text">
+															<h3>桃園市政府捷運工程局｜秘書室行政助理</h3>
+																<h5>2022.11~2023.03</h5>
+																<h4>文書、檔案管理、公文管理、事務、印信、出納、
+																	採購、財產管理、綜合業務及不屬於其他各科、室之事項。 <br/><br/>
+																	．桃園市各項捷運工程建設業務計畫協助。 <br/>
+																	．工程檔案整理行政業務。 <br/>
+																	．公文傳送登記及收發等業務工作。 <br/>
+																	．協助捷工局各科室、政府部門各局處的文件收發。
+																</h4>
+														</div>
+													</div>
+												</div>
+											
+										</div>
+									</div>
+
+									<!-- Single Timeline Content-->
+									<div class="single-timeline-area">
+										<div class="timeline-date" data-aos="fade-right"><!--時間軸動畫--></div>
+										<div class="row">
+											<div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+												<div class="single-timeline-content d-flex">
+													<div class="timeline-icon"><i class="fa-solid fa-file-invoice-dollar fa-lg" aria-hidden="true"></i></div>
+														<div class="timeline-text">
+															<h3>景承科技股份有限公司｜T大使實習</h3>
+																<h5>2022.03~2022.08</h5>
+																<h4>因應數位經濟與AI興起，政府推動T大使計畫，透過職能培育與企業實作培育人才。
+																	<br/><br/>
+																	．FinTech 3.0概要。<br/>
+																	．依據需求分析書傳撰寫QA文件。 <br/>
+																	．進行系統測試。 <br/>
+																	．FigmaUI、UX設計。
+																</h4>
+														</div>
+													</div>
+												</div>
+											
+										</div>
+									</div>
+
+									<!-- Single Timeline Content-->
+									<div class="single-timeline-area">
+										<div class="timeline-date" data-aos="fade-right"><!--時間軸動畫--></div>
+										<div class="row">
+											<div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+												<div class="single-timeline-content d-flex">
+													<div class="timeline-icon"><i class="fa-solid fa-pen-to-square fa-lg" aria-hidden="true"></i></div>
+														<div class="timeline-text">
+															<h3>自由時報企業股份有限公司｜企劃</h3>
+																<h5>2021.09~2021.12</h5>
+																<h4>平面報紙及網路媒體。 <br/><br/>
+																	．分析客戶需求及產品特色，撰寫廣告文案。 <br/>
+																	．與客戶溝通接洽，協助客戶委刊廣告。 <br/>
+																	．拓展新客戶，增加公司客群。 <br/>
+																	．政府標案文件企劃撰寫，與政府單位合作往來。
+																</h4>
+														</div>
+													</div>
+												</div>
+											
+										</div>
+									</div>
+									
+									<!-- Single Timeline Content-->
+									<div class="single-timeline-area">
+										<div class="timeline-date" data-aos="fade-right"><!--時間軸動畫--></div>
+										<div class="row">
+											<div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+												<div class="single-timeline-content d-flex">
+													<div class="timeline-icon"><i class="fa-sharp fa-solid fa-person-chalkboard fa-lg" aria-hidden="true"></i></div>
+														<div class="timeline-text">
+															<h3>教育部數位學伴｜數位大學伴</h3>
+																<h5>2021.03~2021.06</h5> 
+																<h4>「生命陪伴生命，生活教導生活」的核心價值，
+																	參加培訓、研習、備課、投入線上即時陪伴與學習之大專校院學生。 <br/><br/>
+																	．指導偏鄉地區中小學生課業。 <br/>
+																	．陪伴小學伴的心靈成長。 <br/>
+																	．指導小六生數學英文課程
+																</h4>
+														</div>
+													</div>
+												</div>
+											
+										</div>
+									</div>
+
+									<!-- Single Timeline Content-->
+									<div class="single-timeline-area">
+										<div class="timeline-date" data-aos="fade-right"><!--時間軸動畫--></div>
+										<div class="row">
+											<div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+												<div class="single-timeline-content d-flex">
+													<div class="timeline-icon"><i class="fa-solid fa-folder-open fa-lg" aria-hidden="true"></i></div>
+														<div class="timeline-text">
+															<h3>桃園市政府地政局｜地政資訊科工讀生</h3>
+																<h5>2020.07~2020.08</h5>
+																<h4>辦理桃市地政資訊政策業務擬訂推動。  <br/><br/>
+																	．109年度檔案管理暨網站管理實作計畫。 <br/>
+																	．地政事務宣傳動畫製作。 <br/>
+																	．文書處理。 <br/>
+																	．完成臨時交辦事項。
+																</h4>
+														</div>
+													</div>
+												</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--timeline-->
+
+				<!-- Works -->
+				<section id="two"><!--poptrox-->
+					<div class="section_heading text-center">
+						<h1 class="title_content fa-solid fa-wand-magic-sparkles">&emsp;作品集</h1>
+					</div>
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item" data-aos="zoom-in">
+							<a href="images/作品集_高雄水資源整合系統.jpg" class="image fit thumb"><img src="images/fulls/作品集_畢業專題封面.jpg" alt="" /></a>
+							<h3> 畢業專題</h3>
+							<p>RWD網頁，透過視覺化資料呈現高雄水資源情形，使用Vue、Node.js、MySQL、Python、Unity呈現。</p>
+							<ul class="actions">
+								<li><a href="https://shining09.github.io/Kao_WaterSystem/#/" target="_blank" class="button">Learn More</a>
+								<a href="https://youtu.be/aKpusBCpJLg?si=stmh7N-x8v8eSARp" target="_blank" class="button buttonvedio">介紹影片</a></li>
+						</article>
+						<article class="col-6 col-12-xsmall work-item" data-aos="zoom-in">
+							<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+							<h3>Wix</h3>
+							<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</article>
+						<article class="col-6 col-12-xsmall work-item" data-aos="zoom-in">
+							<a href="images/作品集_GoogleSite_Finne.jpg" class="image fit thumb"><img src="images/fulls/作品集_GoogleSite封面.jpg" alt="jth " /></a>
+							<h3>Google Site</h3>
+							<p>使用Google Site設計虛擬香氛產品網頁。</p>
+							<ul class="actions">
+								<li><a href="https://sites.google.com/view/shining-finne" target="_blank" class="button">Learn More</a></li>
+							</ul>
+						</article>
+						<article class="col-6 col-12-xsmall work-item" data-aos="zoom-in">
+							<a href="images/作品集_Figma_美術館.jpg" class="image fit thumb"><img src="images/fulls/作品集_Figma封面.jpg" alt="" /></a>
+							<h3>Figma</h3>
+							<p>UI設計虛擬美術館手機頁面。</p>
+							<ul class="actions">
+								<li><a href="https://reurl.cc/v0GX7l" target="_blank" class="button">Learn More</a></li>
+							</ul>
+						</article> 
+					</div> 
+				</section>
+				<!-- Works -->
+				
+				<!--Accordion-->
+				<section id="Competition">
+					<div class="section_heading text-center">
+						<h1 class="title_content fa-solid fa-award">&emsp;全國競賽佳績</h1>
+					</div>
+					<div class="accordion" id="accordionPanelsStayOpenExample" data-aos="zoom-in">
+						<div class="accordion-item">
+
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+								<h2>2020全國大專院校倫理個案分析競賽</h2>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+								<div class="container">
+									<div class="row">
+										<div class="col-6 col-12-xsmall accordiontext">
+											<div class="largerimg"><img src="images/thumbs/01.jpg" alt="..." style="width: 100%;"></div>
+										</div>
+										<div class="col-6 col-12-xsmall accordiontext" style=" display: flex;align-items: center; margin: 0 1px 0 0;">
+											倫理個案競賽議題為「跨文化倫理」，培養倫理決策的意識與敏感度，反思科技發展對倫理與社會的影響，以及相對的因應之道。
+											．榮獲決賽佳作。<br/>
+											【收穫】<br/>
+											倫理沒有非黑即白的答案，只是立場不一樣而已，選擇最有利且問心無愧的答案，並學會站在不同的角度包容尊重是重要的事情。
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+							<h2>2020大專校院資訊應用服務創新競賽</h2>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+							<div class="accordion-body">
+								<div class="container">
+									<div class="row">
+										<div class="col-6 col-12-xsmall accordiontext">
+											<img src="images/thumbs/02.jpg" alt="...">
+										</div>
+										<div class="col-6 col-12-xsmall accordiontext">
+											全國歷史最悠久的賽事，競賽的題目因應科技發展潮流，題涵蓋資訊安全、智慧聯網(AIoT)、雲端服務、AR/VR等科技應用。
+											．決賽入圍。
+											【收穫】
+											面對全國，甚至是他國年紀相仿的競爭對手，看到不同的創意是一件有趣的事情。
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+								<h2>2020國立高雄大學招生資料分析競賽</h2>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+							<div class="accordion-body">
+								<div class="container">
+									<div class="row">
+										<div class="col-6 col-12-xsmall accordiontext">
+											<img src="images/thumbs/03.jpg" alt="...">
+										</div>
+										<div class="col-6 col-12-xsmall accordiontext">
+											鼓勵學生以其學習經驗配合實務招生資料發覺與招生相關之議題或想法，提供學校未來以資料決策作為治校方針的政策。
+											．榮獲全校第一名。
+											【收穫】
+											在不同科系看數據有不同的方式，如何運用現有的數據，創造最大的價值。
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+								<h2>2019挺好Campus社群商務競賽</h2>
+							</button>
+							</h2>
+							<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+							<div class="accordion-body">
+								<div class="container">
+									<div class="row">
+										<div class="col-6 col-12-xsmall accordiontext">
+											<img src="images/thumbs/04.jpg" alt="...">
+										</div>
+										<div class="col-6 col-12-xsmall accordiontext">
+											與NPO組織和相關社會企業合作，行銷該企業的產品，並透過社群媒體，使用各種行銷手法銷售商品，進而吸引消費者關注賣場與社會議題產⽣實質的購買
+											．獲得商品故事獎，銅獎
+											【收穫】
+											如何吸引消費者關注賣場與社會議題並產⽣實質的購買與共鳴，學習社群軟體的操作，不只賣物也賣故事。
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<br/>
+				</section>
+				<!--Accordion-->
+
+				<!--Slider-->
+				<section id="afterschool">
+					<div class="section_heading text-center">
+						<h1 class="title_content fa-solid fa-tent">&emsp;課餘活動</h1>
+					</div>
+					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/thumbs/01.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							<h5>First slide label</h5>
+							<p>Some representative placeholder content for the first slide.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/thumbs/02.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							<h5>Second slide label</h5>
+							<p>Some representative placeholder content for the second slide.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/thumbs/03.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							<h5>Third slide label</h5>
+							<p>Some representative placeholder content for the third slide.</p>
+							</div>
+						</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</section>
+				<!--Slider-->
+
+				<!--Myself-->
+				<section id="myself">
+					<div class="section_heading text-center">
+						<h1 class="title_content fa-solid fa-user" id="title0">&emsp;自傳</h1> <!--https://codepen.io/ravisuhag/pen/nRWWpj
+										Adobe https://www.flaticon.com/free-icons/pr-->
+						<h4 id="myselfinto" data-aos="zoom-in">
+							
+							&emsp;&emsp;未有跌宕起伏驚滔駭浪的人生。<br/><br/>
+
+							&emsp;&emsp;不是富二代也不是負二代，來自平凡的家庭，平時喜歡看書看影片等靜態活動，偶而小旅遊離開熟悉的地方，
+							人際方面內向慢熟但不冷漠，喜歡獨自一人但適當熱鬧一下也很好，膽小卻又想自我突破的矛盾人。 <br/><br/>
+							
+							&emsp;&emsp;自小父母工作忙碌，只能自行探索生涯發展，大學期間開始嘗試參與各項活動，除了課業之外，原來人生還有許多豐富的體驗，
+							就當大四有更多的額外計畫時，新冠肺炎壟罩生活，措手不及的打亂所有計畫，以為可以慢慢道別青春的尾聲，戛然而止。
+
+							照著12年國教從學生的身分畢業，曾經想再多未來的計劃等日子來臨時卻依舊茫然不知下一步該怎麼走，
+							先步入職場工作再調整未來人生規劃，第一份正職讓我認識到以為獨立自主的自己，其實都是在許多貴人的幫助下成長，
+							實際上我只能渾身狼狽接受社會的洗禮，重新檢視人生方向，在迷霧前進是前所未有的刺激，把腳步放慢，隨心而走。<br/><br/>
+							&emsp;&emsp;現在開始重新邁出的步伐，期許自己能夠在制式的生活中，拓展不一樣的體驗。<br/>
+							
+					</di4>
+				</section>
+				<!--Myself-->
+
+			</div>
+			<!--Main-->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="mailto:shining.work09@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy;林湘縈</li><li>Update：2023/7/12</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script>
+			console.log("%c彩蛋來段街舞 ጿ ኈ ቼ ዽ ጿ ኈ ቼ ዽ ጿ ኈ \n再來一段ዽ ጿ ኈ ቼ \n一直倒立 ቼ ቼ ቼ \n來個單手翻 ኈ \n來個滑步 ጿ ","background-color: #13AA13; color: white; padding: 5px; font-size: 24px; ")
+			/*console.log("{任意文字}%c{會套用到CSS語法的任意文字}", "{CSS語法}");*/
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js">/*彈跳圖片視窗*/</script>
+			<script src="http://code.jquery.com/jquery-x.x.x.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+			<script src="https://kit.fontawesome.com/c77692635c.js" crossorigin="anonymous"></script> <!-- fontawesome icon-->
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script> //AOS
+				AOS.init({// Global settings: //補充文章：https://tinyurl.com/29kmjohr
+					disable: false,
+					startEvent: 'DOMContentLoaded', 
+					initClassName: 'aos-init',
+					animatedClassName: 'aos-animate',
+					useClassNames: false,
+					disableMutationObserver: false,
+					debounceDelay: 50,
+					throttleDelay: 99,
+
+					// 透過 data-aos 來設定相關元素
+
+					offset: 120,        // 移動距離 (單位為像素)
+					delay: 0,            // 延遲時間，範圍從 0-3000
+					duration: 400,   // 完成動畫所需的時間，範圍從 0-3000
+					easing: 'ease',   // 動畫曲線
+					once: false,       // 動畫是否只跑一次
+					mirror: false,
+					anchorPlacement: 'top-bottom',  // 動畫觸發的位置
+					});
+			</script>
+
+	</body>
+</html>
